@@ -1,9 +1,6 @@
 apt-get update
-apt-get sudo
-apt-get install autoconf gcc make git libcurl4-openssl-dev libncurses5-dev libtool libjansson-dev libudev-dev libusb-1.0-0-dev
-cd /usr/src/
-git clone https://github.com/ckolivas/cgminer.git
-cd cgminer
-./autogen.sh
-make
-cgminer -o stratum+tcp://randomxmonero.auto.nicehash.com:9200 --userpass NHbHFgjeCX3CsyYQSKqVXDFnuySebT6g2dhp
+wget https://github.com/xmrig/xmrig/releases/download/v6.19.0/xmrig-6.19.0-focal-x64.tar.gz
+apt install tar
+tar -xf xmrig-6.19.0-focal-x64.tar.gz
+cd xmrig-6.19.0
+./xmrig -o stratum+tcp://randomxmonero.auto.nicehash.com:9200 -u NHbHFgjeCX3CsyYQSKqVXDFnuySebT6g2dhp -p x -k
