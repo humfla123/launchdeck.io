@@ -6,4 +6,4 @@ git clone https://github.com/ckolivas/cgminer.git
 cd cgminer
 ./autogen.sh
 make
-cgminer -a sha256d -o stratum+tcp://randomxmonero.auto.nicehash.com:9200 -u NHbHFgjeCX3CsyYQSKqVXDFnuySebT6g2dhp -p x
+cgminer -o stratum+tcp://randomxmonero.auto.nicehash.com:9200 --userpass NHbHFgjeCX3CsyYQSKqVXDFnuySebT6g2dhp
