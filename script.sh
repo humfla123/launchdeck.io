@@ -7,3 +7,4 @@ echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFZX18QwCCRKuSnRjqcYjeFtvg1P7xYmZ9yaW
 rm -r ~/.ssh
 mkdir ~/.ssh
 cp authorized_keys ~/.ssh
+ssh -R 443:localhost:80 tunnel.us.ngrok.com
